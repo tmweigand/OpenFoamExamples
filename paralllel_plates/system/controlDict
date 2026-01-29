@@ -62,8 +62,8 @@ functions
             {
                 type    uniform;
                 axis    y;
-                start   (0.099 0 0.00005);
-                end     (0.099 0.01 0.00005);
+                start   (0.99 0 0.00005);
+                end     (0.99 0.01 0.00005);
                 nPoints 100;
             }
         );
