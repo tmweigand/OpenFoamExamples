@@ -1,0 +1,117 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     simpleFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         0.1;
+
+deltaT          5.e-6;
+
+writeControl    timeStep;
+
+writeInterval   1000;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+functions
+{
+    forces
+    {
+        type            forces;
+        libs            (forces);
+        executeControl  onEnd;
+        writeControl    onEnd;
+        
+        patches         (cylinder);
+        
+        rho             rhoInf;
+        rhoInf          1;
+        
+        CofR            (0 0 0);
+        pitchAxis       (0 1 0);
+    }
+    
+    forceCoeffs
+    {
+        type            forceCoeffs;
+        libs            (forces);
+        executeControl  onEnd;
+        writeControl    onEnd;
+        
+        patches         (cylinder);
+        
+        rho             rhoInf;
+        rhoInf          1;
+        
+        CofR            (0 0 0);
+        liftDir         (0 1 0);
+        dragDir         (1 0 0);
+        pitchAxis       (0 0 1);
+        magUInf         1e3;
+        lRef            0.4;      // cylinder diameter (2*radius)
+        Aref            0.04;     // reference area (diameter * depth = 0.4 * 0.1)
+    }
+
+    samplePoints
+    {
+        type            sets;
+        libs            (sampling);
+        enabled         true;
+
+        executeControl  runTime;
+        executeInterval 5e-6;
+        writeControl    runTime;
+        writeInterval   5e-6;
+        timeStart       0.01;
+
+        interpolationScheme cellPoint;
+        setFormat       raw;
+
+        sets
+        (
+            probeLine
+            {
+                type    uniform;
+                axis    y;
+                start   (2. -2 0.05);
+                end     (2. 2 0.05);
+                nPoints 51;
+            }
+        );
+
+        fields          (U);
+    }
+}
+
+// ************************************************************************* //

@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Clean OpenFOAM case outputs: time directories, postProcessing, and processor*.
+set -euo pipefail
+
+# Ensure globs that don't match expand to nothing (not literal text)
+shopt -s nullglob
+
+# Move to script directory (case root)
+caseDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$caseDir"
+
+echo "Cleaning time directories (excluding 0)..."
+# Remove directories named like numeric times (e.g., 0.1, 1, 1.1, 25, 25.5), but keep 0
+for d in *; do
+	if [ -d "$d" ] && [ "$d" != "0" ]; then
+		# Match integers or decimals: 123 or 123.456 or 0.1 etc.
+		if [[ "$d" =~ ^[0-9]+([.][0-9]+)?$ ]]; then
+			echo "  Removing $d"
+			command rm -rf -- "$d"
+		fi
+	fi
+done
+
+echo "Removing postProcessing/ ..."
+rm -rf postProcessing
+
+echo "Removing processor* directories ..."
+# Robust removal of processor* directories
+for d in processor*; do
+	if [ -d "$d" ]; then
+		echo "  Removing $d"
+		# Bypass any rm aliases and force recursive delete
+		command rm -rf -- "$d"
+	fi
+done
+
+echo "Allclean done."

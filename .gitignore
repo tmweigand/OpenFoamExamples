@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# OpenFOAM
+processor*/
+postProcessing/
+log.*
+*.foam
+
+# Generated mesh files
+cellLevel
+pointLevel
+polyMesh/
+
+# Logs
+*.log
