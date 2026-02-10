@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Global Allclean script: Clean all case directories
+set -euo pipefail
+
+caseDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$caseDir"
+
+echo "=========================================="
+echo "Cleaning all case directories"
+echo "=========================================="
+
+for caseFolder in velocity_*; do
+	if [ -d "$caseFolder" ]; then
+		echo ""
+		echo "Cleaning $caseFolder..."
+		echo "------------------------------------------"
+		
+		if [ -f "$caseFolder/Allclean" ]; then
+			bash "$caseFolder/Allclean"
+		else
+			echo "Warning: Allclean not found in $caseFolder"
+		fi
+	fi
+done
+
+echo ""
+echo "=========================================="
+echo "All cases cleaned."
+echo "=========================================="

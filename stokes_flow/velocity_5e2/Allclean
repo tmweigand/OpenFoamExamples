@@ -22,6 +22,8 @@ for d in *; do
 done
 
 echo "Removing postProcessing/ ..."
+echo "Removing dynamicCode/ ..."
+rm -rf dynamicCode
 rm -rf postProcessing
 
 echo "Removing processor* directories ..."

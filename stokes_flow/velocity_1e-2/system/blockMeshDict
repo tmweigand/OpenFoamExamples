@@ -1,0 +1,119 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+scale   1;
+
+// Domain limits
+xMin    -2;
+xMax    12;
+yMin    -2;
+yMax    2;
+zMin    0;
+zMax    0.1;
+
+// Cell size for uniform square mesh (in y direction: 2 m / 40 cells = 0.05 m per cell)
+cellSize 0.05;
+
+// Calculate number of cells to maintain square cells
+nCellsX #calc "ceil(($xMax - $xMin) / $cellSize)";
+nCellsY #calc "ceil(($yMax - $yMin) / $cellSize)";
+nCellsZ 1;
+
+vertices
+(
+    ($xMin  $yMin   $zMin)     // 0
+    ($xMax  $yMin   $zMin)     // 1
+    ($xMax  $yMax   $zMin)     // 2
+    ($xMin  $yMax   $zMin)     // 3
+    ($xMin  $yMin   $zMax)     // 4
+    ($xMax  $yMin   $zMax)     // 5
+    ($xMax  $yMax   $zMax)     // 6
+    ($xMin  $yMax   $zMax)     // 7
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) ($nCellsX $nCellsY $nCellsZ) simpleGrading (1 1 1)
+);
+
+edges
+(
+);
+
+boundary
+(
+    inlet
+    {
+        type patch;
+        faces
+        (
+            (0 4 7 3)
+        );
+    }
+
+    outlet
+    {
+        type patch;
+        faces
+        (
+            (1 2 6 5)
+        );
+    }
+
+    top
+    {
+        type cyclic;
+        neighbourPatch bottom;
+        faces
+        (
+            (3 7 6 2)
+        );
+    }
+
+    bottom
+    {
+        type cyclic;
+        neighbourPatch top;
+        faces
+        (
+            (0 1 5 4)
+        );
+    }
+
+    front
+    {
+        type empty;
+        faces
+        (
+            (0 3 2 1)
+        );
+    }
+
+    back
+    {
+        type empty;
+        faces
+        (
+            (4 5 6 7)
+        );
+    }
+);
+
+mergePatchPairs
+(
+);
+
+// ************************************************************************* //
