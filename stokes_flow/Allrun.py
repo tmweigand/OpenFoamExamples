@@ -12,6 +12,8 @@ import re
 # List of velocity cases in order
 cases = [
     "velocity_1e-3",
+    "velocity_5e-3",
+    "velocity_1e-2",
     "velocity_5e-2",
     "velocity_1e-1",
     "velocity_5e-1",
