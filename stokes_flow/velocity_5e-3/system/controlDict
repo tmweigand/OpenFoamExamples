@@ -78,7 +78,7 @@ functions
         liftDir         (0 1 0);
         dragDir         (1 0 0);
         pitchAxis       (0 0 1);
-        magUInf         5e-2;
+        magUInf         5e-3;
         lRef            0.4;      // cylinder diameter (2*radius)
         Aref            0.04;     // reference area (diameter * depth = 0.4 * 0.1)
     }
