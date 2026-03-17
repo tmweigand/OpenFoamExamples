@@ -1,0 +1,1727 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object snappyHexMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+castellatedMesh true;
+snap false;
+addLayers false;
+
+geometry
+{
+    cylinder1
+    {
+        type searchableCylinder;
+        point1 (6.3106119 0.41004732 -0.05);
+        point2 (6.3106119 0.41004732 0.15);
+        radius 0.3;
+    }
+
+    cylinder2
+    {
+        type searchableCylinder;
+        point1 (2.8852756 1.2821272 -0.05);
+        point2 (2.8852756 1.2821272 0.15);
+        radius 0.3;
+    }
+
+    cylinder3
+    {
+        type searchableCylinder;
+        point1 (7.2228294 3.2774777 -0.05);
+        point2 (7.2228294 3.2774777 0.15);
+        radius 0.3;
+    }
+
+    cylinder4
+    {
+        type searchableCylinder;
+        point1 (8.6864879 0.68253086 -0.05);
+        point2 (8.6864879 0.68253086 0.15);
+        radius 0.3;
+    }
+
+    cylinder5
+    {
+        type searchableCylinder;
+        point1 (4.2660651 0.43110777 -0.05);
+        point2 (4.2660651 0.43110777 0.15);
+        radius 0.3;
+    }
+
+    cylinder6
+    {
+        type searchableCylinder;
+        point1 (2.355197 2.5235633 -0.05);
+        point2 (2.355197 2.5235633 0.15);
+        radius 0.3;
+    }
+
+    cylinder7
+    {
+        type searchableCylinder;
+        point1 (0.54943812 1.1748857 -0.05);
+        point2 (0.54943812 1.1748857 0.15);
+        radius 0.3;
+    }
+
+    cylinder8
+    {
+        type searchableCylinder;
+        point1 (6.4089137 2.6977425 -0.05);
+        point2 (6.4089137 2.6977425 0.15);
+        radius 0.3;
+    }
+
+    cylinder9
+    {
+        type searchableCylinder;
+        point1 (7.9086463 0.32859454 -0.05);
+        point2 (7.9086463 0.32859454 0.15);
+        radius 0.3;
+    }
+
+    cylinder10
+    {
+        type searchableCylinder;
+        point1 (7.874701 3.3718133 -0.05);
+        point2 (7.874701 3.3718133 0.15);
+        radius 0.3;
+    }
+
+    cylinder11
+    {
+        type searchableCylinder;
+        point1 (3.4983549 0.9841098 -0.05);
+        point2 (3.4983549 0.9841098 0.15);
+        radius 0.3;
+    }
+
+    cylinder12
+    {
+        type searchableCylinder;
+        point1 (9.2978029 1.781016 -0.05);
+        point2 (9.2978029 1.781016 0.15);
+        radius 0.3;
+    }
+
+    cylinder13
+    {
+        type searchableCylinder;
+        point1 (1.1718109 0.72555206 -0.05);
+        point2 (1.1718109 0.72555206 0.15);
+        radius 0.3;
+    }
+
+    cylinder14
+    {
+        type searchableCylinder;
+        point1 (5.3405441 4.5817094 -0.05);
+        point2 (5.3405441 4.5817094 0.15);
+        radius 0.3;
+    }
+
+    cylinder15
+    {
+        type searchableCylinder;
+        point1 (3.8582231 2.7289788 -0.05);
+        point2 (3.8582231 2.7289788 0.15);
+        radius 0.3;
+    }
+
+    cylinder16
+    {
+        type searchableCylinder;
+        point1 (8.4000449 2.8403494 -0.05);
+        point2 (8.4000449 2.8403494 0.15);
+        radius 0.3;
+    }
+
+    cylinder17
+    {
+        type searchableCylinder;
+        point1 (6.9229753 0.50162729 -0.05);
+        point2 (6.9229753 0.50162729 0.15);
+        radius 0.3;
+    }
+
+    cylinder18
+    {
+        type searchableCylinder;
+        point1 (1.2494134 1.5230839 -0.05);
+        point2 (1.2494134 1.5230839 0.15);
+        radius 0.3;
+    }
+
+    cylinder19
+    {
+        type searchableCylinder;
+        point1 (6.2754338 1.9052616 -0.05);
+        point2 (6.2754338 1.9052616 0.15);
+        radius 0.3;
+    }
+
+    cylinder20
+    {
+        type searchableCylinder;
+        point1 (2.8095915 4.4212802 -0.05);
+        point2 (2.8095915 4.4212802 0.15);
+        radius 0.3;
+    }
+
+    cylinder21
+    {
+        type searchableCylinder;
+        point1 (1.9087033 3.5081579 -0.05);
+        point2 (1.9087033 3.5081579 0.15);
+        radius 0.3;
+    }
+
+    cylinder22
+    {
+        type searchableCylinder;
+        point1 (1.8359834 1.9696039 -0.05);
+        point2 (1.8359834 1.9696039 0.15);
+        radius 0.3;
+    }
+
+    cylinder23
+    {
+        type searchableCylinder;
+        point1 (9.6015195 3.1159989 -0.05);
+        point2 (9.6015195 3.1159989 0.15);
+        radius 0.3;
+    }
+
+    cylinder24
+    {
+        type searchableCylinder;
+        point1 (5.5353276 3.3123027 -0.05);
+        point2 (5.5353276 3.3123027 0.15);
+        radius 0.3;
+    }
+
+    cylinder25
+    {
+        type searchableCylinder;
+        point1 (2.4530519 0.44124107 -0.05);
+        point2 (2.4530519 0.44124107 0.15);
+        radius 0.3;
+    }
+
+    cylinder26
+    {
+        type searchableCylinder;
+        point1 (8.5378557 1.6845827 -0.05);
+        point2 (8.5378557 1.6845827 0.15);
+        radius 0.3;
+    }
+
+    cylinder27
+    {
+        type searchableCylinder;
+        point1 (8.8967473 2.3189482 -0.05);
+        point2 (8.8967473 2.3189482 0.15);
+        radius 0.3;
+    }
+
+    cylinder28
+    {
+        type searchableCylinder;
+        point1 (5.5768605 1.4560631 -0.05);
+        point2 (5.5768605 1.4560631 0.15);
+        radius 0.3;
+    }
+
+    cylinder29
+    {
+        type searchableCylinder;
+        point1 (4.0543647 1.2650113 -0.05);
+        point2 (4.0543647 1.2650113 0.15);
+        radius 0.3;
+    }
+
+    cylinder30
+    {
+        type searchableCylinder;
+        point1 (1.3307018 3.0607626 -0.05);
+        point2 (1.3307018 3.0607626 0.15);
+        radius 0.3;
+    }
+
+    cylinder31
+    {
+        type searchableCylinder;
+        point1 (7.745546 2.1575039 -0.05);
+        point2 (7.745546 2.1575039 0.15);
+        radius 0.3;
+    }
+
+    cylinder32
+    {
+        type searchableCylinder;
+        point1 (9.4281367 4.0874307 -0.05);
+        point2 (9.4281367 4.0874307 0.15);
+        radius 0.3;
+    }
+
+    cylinder33
+    {
+        type searchableCylinder;
+        point1 (0.40792161 3.471176 -0.05);
+        point2 (0.40792161 3.471176 0.15);
+        radius 0.3;
+    }
+
+    cylinder34
+    {
+        type searchableCylinder;
+        point1 (2.8081568 3.1202319 -0.05);
+        point2 (2.8081568 3.1202319 0.15);
+        radius 0.3;
+    }
+
+    cylinder35
+    {
+        type searchableCylinder;
+        point1 (4.5650028 4.4967901 -0.05);
+        point2 (4.5650028 4.4967901 0.15);
+        radius 0.3;
+    }
+
+    cylinder36
+    {
+        type searchableCylinder;
+        point1 (5.0055095 1.0860683 -0.05);
+        point2 (5.0055095 1.0860683 0.15);
+        radius 0.3;
+    }
+
+    cylinder37
+    {
+        type searchableCylinder;
+        point1 (6.02432 0.97249278 -0.05);
+        point2 (6.02432 0.97249278 0.15);
+        radius 0.3;
+    }
+
+    cylinder38
+    {
+        type searchableCylinder;
+        point1 (0.30537582 1.7262867 -0.05);
+        point2 (0.30537582 1.7262867 0.15);
+        radius 0.3;
+    }
+
+    cylinder39
+    {
+        type searchableCylinder;
+        point1 (0.48308138 4.3880339 -0.05);
+        point2 (0.48308138 4.3880339 0.15);
+        radius 0.3;
+    }
+
+    cylinder40
+    {
+        type searchableCylinder;
+        point1 (8.5599857 3.9593283 -0.05);
+        point2 (8.5599857 3.9593283 0.15);
+        radius 0.3;
+    }
+
+    cylinder41
+    {
+        type searchableCylinder;
+        point1 (1.1051424 2.438358 -0.05);
+        point2 (1.1051424 2.438358 0.15);
+        radius 0.3;
+    }
+
+    cylinder42
+    {
+        type searchableCylinder;
+        point1 (7.4988436 0.86492244 -0.05);
+        point2 (7.4988436 0.86492244 0.15);
+        radius 0.3;
+    }
+
+    cylinder43
+    {
+        type searchableCylinder;
+        point1 (4.7676544 2.7191358 -0.05);
+        point2 (4.7676544 2.7191358 0.15);
+        radius 0.3;
+    }
+
+    cylinder44
+    {
+        type searchableCylinder;
+        point1 (4.7431076 3.7523255 -0.05);
+        point2 (4.7431076 3.7523255 0.15);
+        radius 0.3;
+    }
+
+    cylinder45
+    {
+        type searchableCylinder;
+        point1 (9.551153 0.73303863 -0.05);
+        point2 (9.551153 0.73303863 0.15);
+        radius 0.3;
+    }
+
+    cylinder46
+    {
+        type searchableCylinder;
+        point1 (5.4730579 0.52258865 -0.05);
+        point2 (5.4730579 0.52258865 0.15);
+        radius 0.3;
+    }
+
+    cylinder47
+    {
+        type searchableCylinder;
+        point1 (3.8623473 4.6353589 -0.05);
+        point2 (3.8623473 4.6353589 0.15);
+        radius 0.3;
+    }
+
+    cylinder48
+    {
+        type searchableCylinder;
+        point1 (2.7929087 3.7499106 -0.05);
+        point2 (2.7929087 3.7499106 0.15);
+        radius 0.3;
+    }
+
+    cylinder49
+    {
+        type searchableCylinder;
+        point1 (9.2987858 4.6798598 -0.05);
+        point2 (9.2987858 4.6798598 0.15);
+        radius 0.3;
+    }
+
+    cylinder50
+    {
+        type searchableCylinder;
+        point1 (1.7798676 4.5274272 -0.05);
+        point2 (1.7798676 4.5274272 0.15);
+        radius 0.3;
+    }
+
+    cylinder51
+    {
+        type searchableCylinder;
+        point1 (6.049771 4.6438255 -0.05);
+        point2 (6.049771 4.6438255 0.15);
+        radius 0.3;
+    }
+
+    cylinder52
+    {
+        type searchableCylinder;
+        point1 (7.7835497 4.0870914 -0.05);
+        point2 (7.7835497 4.0870914 0.15);
+        radius 0.3;
+    }
+
+    cylinder53
+    {
+        type searchableCylinder;
+        point1 (8.4272935 4.5953065 -0.05);
+        point2 (8.4272935 4.5953065 0.15);
+        radius 0.3;
+    }
+
+    cylinder54
+    {
+        type searchableCylinder;
+        point1 (7.9210436 1.4739451 -0.05);
+        point2 (7.9210436 1.4739451 0.15);
+        radius 0.3;
+    }
+
+    cylinder55
+    {
+        type searchableCylinder;
+        point1 (4.6268504 1.6428398 -0.05);
+        point2 (4.6268504 1.6428398 0.15);
+        radius 0.3;
+    }
+
+    cylinder56
+    {
+        type searchableCylinder;
+        point1 (3.3856623 4.1031529 -0.05);
+        point2 (3.3856623 4.1031529 0.15);
+        radius 0.3;
+    }
+
+    cylinder57
+    {
+        type searchableCylinder;
+        point1 (7.1483236 1.6801802 -0.05);
+        point2 (7.1483236 1.6801802 0.15);
+        radius 0.3;
+    }
+
+    cylinder58
+    {
+        type searchableCylinder;
+        point1 (3.2072758 2.0969288 -0.05);
+        point2 (3.2072758 2.0969288 0.15);
+        radius 0.3;
+    }
+
+    cylinder59
+    {
+        type searchableCylinder;
+        point1 (6.6242793 1.2884189 -0.05);
+        point2 (6.6242793 1.2884189 0.15);
+        radius 0.3;
+    }
+
+    cylinder60
+    {
+        type searchableCylinder;
+        point1 (7.0611752 2.5210239 -0.05);
+        point2 (7.0611752 2.5210239 0.15);
+        radius 0.3;
+    }
+
+    cylinder61
+    {
+        type searchableCylinder;
+        point1 (3.4596177 3.2882243 -0.05);
+        point2 (3.4596177 3.2882243 0.15);
+        radius 0.3;
+    }
+
+    cylinder62
+    {
+        type searchableCylinder;
+        point1 (0.4822029 2.6734438 -0.05);
+        point2 (0.4822029 2.6734438 0.15);
+        radius 0.3;
+    }
+
+    cylinder63
+    {
+        type searchableCylinder;
+        point1 (6.4113545 3.7374254 -0.05);
+        point2 (6.4113545 3.7374254 0.15);
+        radius 0.3;
+    }
+
+    cylinder64
+    {
+        type searchableCylinder;
+        point1 (1.2578723 3.6989159 -0.05);
+        point2 (1.2578723 3.6989159 0.15);
+        radius 0.3;
+    }
+
+    cylinder65
+    {
+        type searchableCylinder;
+        point1 (7.1976759 4.5480844 -0.05);
+        point2 (7.1976759 4.5480844 0.15);
+        radius 0.3;
+    }
+
+    cylinder66
+    {
+        type searchableCylinder;
+        point1 (5.3588253 2.427389 -0.05);
+        point2 (5.3588253 2.427389 0.15);
+        radius 0.3;
+    }
+
+    cylinder67
+    {
+        type searchableCylinder;
+        point1 (2.0404085 1.2520924 -0.05);
+        point2 (2.0404085 1.2520924 0.15);
+        radius 0.3;
+    }
+
+    cylinder68
+    {
+        type searchableCylinder;
+        point1 (1.1584727 4.5324088 -0.05);
+        point2 (1.1584727 4.5324088 0.15);
+        radius 0.3;
+    }
+
+    cylinder69
+    {
+        type searchableCylinder;
+        point1 (9.5196905 2.4794461 -0.05);
+        point2 (9.5196905 2.4794461 0.15);
+        radius 0.3;
+    }
+
+    cylinder70
+    {
+        type searchableCylinder;
+        point1 (4.3115817 3.2264746 -0.05);
+        point2 (4.3115817 3.2264746 0.15);
+        radius 0.3;
+    }
+
+    cylinder71
+    {
+        type searchableCylinder;
+        point1 (3.4943518 0.32686547 -0.05);
+        point2 (3.4943518 0.32686547 0.15);
+        radius 0.3;
+    }
+
+    cylinder72
+    {
+        type searchableCylinder;
+        point1 (7.6022548 2.7974116 -0.05);
+        point2 (7.6022548 2.7974116 0.15);
+        radius 0.3;
+    }
+
+    cylinder73
+    {
+        type searchableCylinder;
+        point1 (7.1373636 3.9033738 -0.05);
+        point2 (7.1373636 3.9033738 0.15);
+        radius 0.3;
+    }
+
+    cylinder74
+    {
+        type searchableCylinder;
+        point1 (5.5980095 3.9310396 -0.05);
+        point2 (5.5980095 3.9310396 0.15);
+        radius 0.3;
+    }
+
+    cylinder75
+    {
+        type searchableCylinder;
+        point1 (0.56671079 0.50003193 -0.05);
+        point2 (0.56671079 0.50003193 0.15);
+        radius 0.3;
+    }
+
+    cylinder76
+    {
+        type searchableCylinder;
+        point1 (4.0219179 3.8923942 -0.05);
+        point2 (4.0219179 3.8923942 0.15);
+        radius 0.3;
+    }
+
+    cylinder77
+    {
+        type searchableCylinder;
+        point1 (4.0308264 1.941427 -0.05);
+        point2 (4.0308264 1.941427 0.15);
+        radius 0.3;
+    }
+
+    cylinder78
+    {
+        type searchableCylinder;
+        point1 (2.5787884 1.9546433 -0.05);
+        point2 (2.5787884 1.9546433 0.15);
+        radius 0.3;
+    }
+
+    cylinder79
+    {
+        type searchableCylinder;
+        point1 (8.9516865 3.343519 -0.05);
+        point2 (8.9516865 3.343519 0.15);
+        radius 0.3;
+    }
+
+    cylinder80
+    {
+        type searchableCylinder;
+        point1 (7.8149461 4.6910392 -0.05);
+        point2 (7.8149461 4.6910392 0.15);
+        radius 0.3;
+    }
+
+    cylinder81
+    {
+        type searchableCylinder;
+        point1 (1.7823655 0.70216683 -0.05);
+        point2 (1.7823655 0.70216683 0.15);
+        radius 0.3;
+    }
+
+    cylinder82
+    {
+        type searchableCylinder;
+        point1 (6.6212458 4.3311174 -0.05);
+        point2 (6.6212458 4.3311174 0.15);
+        radius 0.3;
+    }
+
+    cylinder83
+    {
+        type searchableCylinder;
+        point1 (1.7247573 2.6002346 -0.05);
+        point2 (1.7247573 2.6002346 0.15);
+        radius 0.3;
+    }
+
+    cylinder84
+    {
+        type searchableCylinder;
+        point1 (4.870726 0.325047 -0.05);
+        point2 (4.870726 0.325047 0.15);
+        radius 0.3;
+    }
+
+    cylinder85
+    {
+        type searchableCylinder;
+        point1 (8.9805374 1.2531813 -0.05);
+        point2 (8.9805374 1.2531813 0.15);
+        radius 0.3;
+    }
+
+    cylinder86
+    {
+        type searchableCylinder;
+        point1 (2.2489052 4.0685027 -0.05);
+        point2 (2.2489052 4.0685027 0.15);
+        radius 0.3;
+    }
+
+    cylinder87
+    {
+        type searchableCylinder;
+        point1 (9.6937884 1.3208011 -0.05);
+        point2 (9.6937884 1.3208011 0.15);
+        radius 0.3;
+    }
+
+    cylinder88
+    {
+        type searchableCylinder;
+        point1 (3.2513174 2.6989916 -0.05);
+        point2 (3.2513174 2.6989916 0.15);
+        radius 0.3;
+    }
+
+    cylinder89
+    {
+        type searchableCylinder;
+        point1 (3.5244918 1.5863195 -0.05);
+        point2 (3.5244918 1.5863195 0.15);
+        radius 0.3;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+castellatedMeshControls
+{
+    maxLocalCells 100000;
+    maxGlobalCells 2000000;
+    minRefinementCells 10;
+    maxLoadUnbalance 0.1;
+    nCellsBetweenLevels 3;
+    features
+    (
+    );
+                                        refinementSurfaces
+    {
+        cylinder1
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder2
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder3
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder4
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder5
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder6
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder7
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder8
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder9
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder10
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder11
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder12
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder13
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder14
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder15
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder16
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder17
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder18
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder19
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder20
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder21
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder22
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder23
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder24
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder25
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder26
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder27
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder28
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder29
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder30
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder31
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder32
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder33
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder34
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder35
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder36
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder37
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder38
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder39
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder40
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder41
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder42
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder43
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder44
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder45
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder46
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder47
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder48
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder49
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder50
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder51
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder52
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder53
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder54
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder55
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder56
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder57
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder58
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder59
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder60
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder61
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder62
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder63
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder64
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder65
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder66
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder67
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder68
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder69
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder70
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder71
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder72
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder73
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder74
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder75
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder76
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder77
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder78
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder79
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder80
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder81
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder82
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder83
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder84
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder85
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder86
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder87
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder88
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+
+        cylinder89
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups 1(cylinderGroup);
+            }
+        }
+    }
+resolveFeatureAngle 30;
+
+    refinementRegions
+    {
+    }
+    locationInMesh (0.2 0.1 0.05);
+    allowFreeStandingZoneFaces true;
+}
+
+snapControls
+{
+    nSmoothPatch 3;
+    tolerance 2.0;
+    nSolveIter 30;
+    nRelaxIter 5;
+    nFeatureSnapIter 10;
+
+    implicitFeatureSnap true;
+    explicitFeatureSnap false;
+    multiRegionFeatureSnap false;
+}
+
+addLayersControls
+{
+    relativeSizes true;
+    layers
+    {
+    }
+    expansionRatio 1.0;
+    finalLayerThickness 0.3;
+    minThickness 1e-3;
+    nGrow 0;
+    featureAngle 30;
+    slipFeatureAngle 30;
+    nRelaxIter 5;
+    nSmoothSurfaceNormals 1;
+    nSmoothNormals 3;
+    nSmoothThickness 10;
+    maxFaceExtendFactor 1.0;
+    maxSnappyIter 5;
+    maxNonOrtho 200;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 15;
+    maxConcavity 80;
+    minFlatness 0.5;
+    nSmoothNonOrtho 3;
+}
+
+meshQualityControls
+{
+    maxNonOrtho 65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave 80;
+    minVol 1e-250;
+    minTetQuality 1e-25;
+    minArea -1;
+    minTwist 0.05;
+    minDeterminant 0.001;
+    minFaceWeight 0.05;
+    minVolRatio 1e-1;
+    minTriangleTwist -1;
+
+    nSmoothScale 4;
+    errorReduction 0.75;
+
+    relaxed
+    {
+        maxNonOrtho 75;
+    }
+}
+writeFlags
+(
+    scalarLevels
+    layerSets
+    layerFields
+);
+
+mergeTolerance 1e-6;
+
+// ************************************************************************* //
